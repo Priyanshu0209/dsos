@@ -1,0 +1,5 @@
+     0.054 - debug: Settings location "/home/priyanshu/.config/QGroundControl/QGroundControl.ini" Is writable?: true (qgc.qgcapplication:unknown:0)
+     0.063 - debug: Filter rules "*Log.debug=false\nqgc.*.debug=false\nqgc.videomanager.videoreceiver.gstreamer.api.debug=true\nqt.qml.connections=false" (qgc.utilities.qgcloggingcategory:unknown:0)
+     5.899 - critical: Error loading text-to-speech plug-in "speechd" (default:unknown:0)
+     6.200 - warning: "There are still \"9\" items in the process of being created at engine destruction." (default:unknown:0)
+     6.234 - debug: Exiting main (default:unknown:0)

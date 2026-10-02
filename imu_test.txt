@@ -1,0 +1,6 @@
+/world/default/model/x500_1/link/base_link/sensor/imu_sensor/imu
+/world/default/model/x500_2/link/base_link/sensor/imu_sensor/imu
+/world/default/model/x500_0/link/base_link/sensor/imu_sensor/imu
+/world/default/model/x500_0/link/camera_link/sensor/camera_imu/imu
+/world/default/model/x500_1/link/camera_link/sensor/camera_imu/imu
+/world/default/model/x500_2/link/camera_link/sensor/camera_imu/imu

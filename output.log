@@ -1,0 +1,106 @@
+[2J[H
+[96m[1m==========================================
+DSOS Boot Manager
+=================[0m
+[97mChecking Dependencies............... [93mWAIT[0m
+[97mChecking Dependencies............... [92mOK[0m
+[97mLaunching Gazebo.................... [93mWAIT[0m
+[97mLaunching Gazebo.................... [92mOK[0m
+[97mRunning Pre-flight Cleanup.......... [93mWAIT[0m
+[97mRunning Pre-flight Cleanup.......... [92mOK[0m
+[97mLaunching PX4 Swarm Instances...... [93mWAIT[0m
+[97mLaunching PX4 Swarm Instances...... [92mOK[0m
+[97mVerifying PX4 Instance Ownership.... [93mWAIT[0m
+[97mVerifying PX4 Instance Ownership.... [92mOK[0m
+[97mVerifying UDP Port Bindings........ [93mWAIT[0m
+[97mVerifying UDP Port Bindings........ [92mOK[0m
+[97mConnecting MAVSDK................... [93mWAIT[0m
+
+============================================================
+MAVSDK DIAGNOSTIC MODE: Connection Starting
+============================================================
+RUNNING PX4 PROCESSES:
+ - PID: 37345, CMD: /home/priyanshu/PX4/PX4-Autopilot/build/px4_sitl_default/bin/px4 -i 0 -d /home/priyanshu/PX4/PX4-Autopilot/build/px4_sitl_default/etc
+ - PID: 37346, CMD: /home/priyanshu/PX4/PX4-Autopilot/build/px4_sitl_default/bin/px4 -i 1 -d /home/priyanshu/PX4/PX4-Autopilot/build/px4_sitl_default/etc
+ - PID: 37347, CMD: /home/priyanshu/PX4/PX4-Autopilot/build/px4_sitl_default/bin/px4 -i 2 -d /home/priyanshu/PX4/PX4-Autopilot/build/px4_sitl_default/etc
+
+RUNNING GAZEBO PROCESSES:
+
+UDP SOCKETS OPENED BY PX4:
+ - PID: 37345 listening on addr(ip='127.0.0.1', port=39885)
+ - PID: 37345 listening on addr(ip='0.0.0.0', port=18570)
+ - PID: 37345 listening on addr(ip='0.0.0.0', port=10318)
+ - PID: 37345 listening on addr(ip='0.0.0.0', port=14580)
+ - PID: 37345 listening on addr(ip='0.0.0.0', port=14280)
+ - PID: 37345 listening on addr(ip='0.0.0.0', port=10317)
+ - PID: 37345 listening on addr(ip='0.0.0.0', port=13030)
+ - PID: 37346 listening on addr(ip='0.0.0.0', port=14581)
+ - PID: 37346 listening on addr(ip='0.0.0.0', port=14281)
+ - PID: 37346 listening on addr(ip='0.0.0.0', port=13031)
+ - PID: 37346 listening on addr(ip='0.0.0.0', port=10318)
+ - PID: 37346 listening on addr(ip='127.0.0.1', port=37828)
+ - PID: 37346 listening on addr(ip='0.0.0.0', port=10317)
+ - PID: 37346 listening on addr(ip='0.0.0.0', port=18571)
+ - PID: 37347 listening on addr(ip='0.0.0.0', port=18572)
+ - PID: 37347 listening on addr(ip='0.0.0.0', port=14282)
+ - PID: 37347 listening on addr(ip='0.0.0.0', port=10318)
+ - PID: 37347 listening on addr(ip='0.0.0.0', port=13032)
+ - PID: 37347 listening on addr(ip='0.0.0.0', port=14582)
+ - PID: 37347 listening on addr(ip='127.0.0.1', port=43920)
+ - PID: 37347 listening on addr(ip='0.0.0.0', port=10317)
+
+CONFIGURED MAVLINK PORTS: [14540, 14541, 14542]
+ATTEMPTING CONNECTIONS:
+ - Drone 1: udp://:14540 (gRPC: 60051)
+ - Drone 2: udp://:14541 (gRPC: 60052)
+ - Drone 3: udp://:14542 (gRPC: 60053)
+
+DISCOVERY (Timeout: 15.0s):
+
+MAVSDK DISCOVERY RESULTS:
+Drone   | PX4 Port   | MAVSDK Endpoint      | Heartbeat  | Connected  | Telemetry      
+-------------------------------------------------------------------------------------
+1       | 14540      | udp://:14540        | YES        | YES        | OK             
+2       | 14541      | udp://:14541        | YES        | YES        | OK             
+3       | 14542      | udp://:14542        | YES        | YES        | OK             
+-------------------------------------------------------------------------------------
+
+[97mConnecting MAVSDK................... [92mOK[0m
+[97mDiscovering Vehicles................ [92m3 Found[0m
+[97mLaunching QGroundControl............ [93mWAIT[0m
+
+Shutting down...
+
+Shutting down...
+[97mLaunching QGroundControl............ [92mOK[0m
+
+========================================
+PROCESS VERIFICATION SUMMARY
+========================================
+Gazebo Processes: 0
+PX4 Processes: 0
+QGroundControl Processes: 2
+MAVSDK Connections: 3
+========================================
+
+Found 0 PX4 instances! Exactly 3 is required.
+Found 3 MAVSDK connections! Exactly 3 is required.
+[97mArchitecture Verification........... [91mFAIL[0m
+
+[91m[1mSystem Startup Failed. Check logs.[0m
+
+Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x7f4631039d00>
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 126, in __del__
+    self.close()
+  File "/usr/lib/python3.12/asyncio/base_subprocess.py", line 104, in close
+    proto.pipe.close()
+  File "/usr/lib/python3.12/asyncio/unix_events.py", line 568, in close
+    self._close(None)
+  File "/usr/lib/python3.12/asyncio/unix_events.py", line 592, in _close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 795, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 541, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed

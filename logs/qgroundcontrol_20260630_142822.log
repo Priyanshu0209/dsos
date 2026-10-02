@@ -1,0 +1,7 @@
+     0.052 - debug: Settings location "/home/priyanshu/.config/QGroundControl/QGroundControl.ini" Is writable?: true (qgc.qgcapplication:unknown:0)
+     0.071 - debug: Filter rules "*Log.debug=false\nqgc.*.debug=false\nqgc.videomanager.videoreceiver.gstreamer.api.debug=true\nqt.qml.connections=false" (qgc.utilities.qgcloggingcategory:unknown:0)
+
+(QGroundControl:126823): GStreamer-WARNING **: 14:28:28.118: External plugin loader failed. This most likely means that the plugin loader helper binary was not found or could not be run. You might need to set the GST_PLUGIN_SCANNER environment variable if your setup is unusual. This should normally not be required though.
+     6.928 - critical: Error loading text-to-speech plug-in "speechd" (default:unknown:0)
+     7.129 - warning: "There are still \"11\" items in the process of being created at engine destruction." (default:unknown:0)
+     7.158 - debug: Exiting main (default:unknown:0)
